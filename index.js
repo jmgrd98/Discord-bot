@@ -1,12 +1,12 @@
 // Require the necessary discord.js classes
-const { Client, Events, GatewayIntentBits } = require('discord.js');
+const {Client, Events, GatewayIntentBits} = require('discord.js');
 
 const env = require('dotenv');
 env.config();
-const { TOKEN, CLIENT_ID, GUILD_ID } = process.env;
+const {TOKEN, CLIENT_ID, GUILD_ID} = process.env;
 
 // Create a new client instance
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const client = new Client({intents: [GatewayIntentBits.Guilds]});
 
 // When the client is ready, run this code (only once)
 // We use 'c' for the event parameter to keep it separate from the already defined 'client'
